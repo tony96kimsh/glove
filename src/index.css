@@ -10,3 +10,6 @@ body {
   font-family: 'NanumSquareRound', sans-serif;  
   background: #fdf6ee;
 }
+html {
+  scroll-behavior: smooth;
+}

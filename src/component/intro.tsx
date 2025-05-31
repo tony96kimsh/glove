@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const Intro = () => {
   return (
     <div
+      id="home"
       className="vh-100 d-flex flex-column justify-content-center align-items-center position-relative"
       style={{
         backgroundColor: "#ffffff",

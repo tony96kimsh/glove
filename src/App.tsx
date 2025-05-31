@@ -11,6 +11,10 @@ function App() {
       <Header />
       <Intro />
       <About />
+
+      <div className='bg-secondary'>project</div>
+      <div className='bg-secondary'>contact</div>
+      <div className='bg-secondary'>footer</div>
       <br />
     </>
   )
