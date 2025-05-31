@@ -1,10 +1,17 @@
 import './App.css'
+import About from './component/About';
+import Header from './component/Header';
+import Intro from './component/intro'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
   return (
     <>
-      안녕하세요
+      <Header />
+      <Intro />
+      <About />
+      <br />
     </>
   )
 }
