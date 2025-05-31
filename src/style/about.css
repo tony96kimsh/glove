@@ -1,0 +1,38 @@
+.tech-scroll-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.tech-scroll-inner {
+  display: inline-flex;
+  animation: infinite-scroll 1s linear infinite;
+}
+
+.tech-scroll-wrapper:hover .tech-scroll-inner {
+  animation-play-state: paused;
+}
+
+.tech-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.tech-icon:hover {
+  opacity: 1;
+  transform: none;
+}
+
+/* 무한 스크롤 키프레임 */
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

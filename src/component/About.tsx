@@ -1,6 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
-
+import '../style/about.css'
+import Marquee from "react-fast-marquee";
 const About = () => {
+  const techStacks = [
+    "c", "cplusplus", "csharp", "javascript", "typescript",
+    "nodejs", "react", "redux", "jquery", "bootstrap", "html5", "css3" ,"python", "mysql", 
+  ];
   return (
     <section
       id="about"
@@ -17,29 +22,36 @@ const About = () => {
             <h2 style={{ fontSize: "2.5rem", fontWeight: 800, marginBottom: "1.5rem" }}>
               About Me
             </h2>
-            <p style={{ fontSize: "1.2rem", lineHeight: 1.8 }}>
-              디자인부터 QA, 프론트엔드, 백엔드까지 경험한<br />
-              풀스택 주니어 개발자 <strong>김성훈</strong>입니다.
-              <br /><br />
-              ZARA Home에서 RFID 시스템을 도입하며 IT에 흥미를 느끼게 되었고,<br />
-              이후 QA 업무를 통해 사용자 중심의 관점과 꼼꼼함을 키워왔습니다.<br />
-              <br />
-              React 기반 프론트엔드부터 Node.js 백엔드 API 연동,<br />
-              HTML/CSS 퍼블리싱과 테스트까지 넓은 스펙트럼의 개발 경험을 지니고 있습니다.
-            </p>
+              <p style={{ fontSize: "1.2rem", lineHeight: 1.8 }}>
+                <strong>디자인부터 QA, 프론트엔드, 백엔드까지 경험한</strong><br />
+                풀스택 주니어 개발자 <strong>김성훈</strong>입니다.
+                <br /><br />
+                <strong>자라홈에서 RFID 시스템을 도입하며 IT에 눈을 뜨고,</strong><br />
+                이후 <strong>QA 경험을 바탕으로</strong> 사용자 중심의 서비스와  
+                안정적인 개발에 매력을 느껴 개발자로 전향했습니다.
+                <br /><br />
+                <strong>C# 데스크톱 앱 개발</strong>, <strong>React</strong>, <strong>Node.js</strong> 기반의 웹 개발,  
+                그리고 <strong>퍼블리싱 및 QA 경험</strong>까지<br />
+                <strong>넓고 탄탄한 개발 스펙트럼</strong>을 지닌 풀스택 주니어 개발자입니다.
+              </p>
           </Col>
         </Row>
 
-        <Row className="justify-content-center">
-          <Col md={10} lg={8}>
-            <h3 style={{ fontSize: "1.8rem", fontWeight: 700, marginBottom: "1rem" }}>핵심 가치</h3>
-            <ul style={{ fontSize: "1.1rem", lineHeight: 1.8, paddingLeft: 0, listStyle: "none" }}>
-              <li>✅ 사용자 중심 개발</li>
-              <li>✅ 프론트와 백을 아우르는 풀스택 지향</li>
-              <li>✅ 협업을 통해 함께 성장하는 개발자</li>
-            </ul>
-          </Col>
-        </Row>
+
+        {/* 기술스택 스크롤 영역 */}
+        <Marquee className="mx-auto rounded-pill"
+          gradient={false} speed={40} pauseOnHover={true}>
+          {techStacks.map((stack, i) => (
+            <img
+              key={i}
+              src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${stack}/${stack}-original.svg`}
+              alt={stack}
+              style={{ width: 60, height: 60, padding: "0 20px", opacity: 0.4, boxSizing: 'content-box' }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.4")}
+            />
+          ))}
+        </Marquee>
       </Container>
     </section>
   );
