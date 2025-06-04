@@ -4,14 +4,20 @@ import Marquee from "react-fast-marquee";
 
 const About = () => {
   const techStacks = [
+
     "c", "cplusplus", "csharp", "javascript", "typescript",
-    "nodejs", "react", "redux", "jquery", "bootstrap", "html5", "css3", "python", "mysql"
+    "nodejs", "react", "redux", "jquery", "bootstrap",
+    "python", "mysql",
+    
 
-    ,"c", "cplusplus", "csharp", "javascript", "typescript",
-    "nodejs", "react", "redux", "jquery", "bootstrap", "html5", "css3", "python", "mysql"
+    "c", "cplusplus", "csharp", "javascript", "typescript",
+    "nodejs", "react", "redux", "jquery", "bootstrap",
+    "python", "mysql",
+    
 
-    ,"c", "cplusplus", "csharp", "javascript", "typescript",
-    "nodejs", "react", "redux", "jquery", "bootstrap", "html5", "css3", "python", "mysql"
+    "c", "cplusplus", "csharp", "javascript", "typescript",
+    "nodejs", "react", "redux", "jquery", "bootstrap",
+    "python", "mysql",    
   ];
 
   return (

@@ -3,6 +3,8 @@ import About from './component/About';
 import Header from './component/Header';
 import Intro from './component/intro'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Project from './component/Project';
+import Contact from './component/Contact';
 
 function App() {
 
@@ -12,9 +14,8 @@ function App() {
       <Intro />
       <About />
 
-      <div className='bg-secondary'>project</div>
-      <div className='bg-secondary'>contact</div>
-      <div className='bg-secondary'>footer</div>
+      <Project />
+      <Contact />
       <br />
     </>
   )
