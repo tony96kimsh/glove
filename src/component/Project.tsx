@@ -125,26 +125,48 @@ const Projects = () => {
           </Modal.Header>
 
           <Modal.Body style={{ maxHeight: "70vh", overflowY: "auto", paddingBottom: "5rem" }}>
-            <ReactMarkdown
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeRaw]}
-              components={{
-                img: ({ node, ...props }) => (
-                  <img
-                    {...props}
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                      display: "block",
-                      margin: "1rem auto",
-                      borderRadius: "8px",
-                    }}
-                  />
-                ),
-              }}
-            >
-              {markdownContent}
-            </ReactMarkdown>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+            components={{
+              img: ({ node, ...props }) => (
+                <img
+                  {...props}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    maxHeight: "60vh",
+                    display: "block",
+                    margin: "1rem auto",
+                    border: "1px solid #000",
+                    borderRadius: "8px",
+                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                  }}
+                />
+              ),
+              table: ({ node, ...props }) => (
+                <table
+                  {...props}
+                  style={{
+                    width: "100%",
+                    borderCollapse: "separate",
+                    borderSpacing: "1.5rem 1rem", // 좌우 간격 확보 (col, row 모두)
+                  }}
+                />
+              ),
+              td: ({ node, ...props }) => (
+                <td
+                  {...props}
+                  style={{
+                    padding: "0.5rem",
+                    verticalAlign: "top",
+                  }}
+                />
+              ),
+            }}
+          >
+            {markdownContent}
+          </ReactMarkdown>
           </Modal.Body>
 
           <div

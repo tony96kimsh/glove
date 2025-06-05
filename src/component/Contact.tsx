@@ -29,14 +29,17 @@ const Contact = () => {
               <Github size={20} className="me-2" />
               깃허브: https://github.com/tony96kimsh
             </a>
-            <a
+            
+            </p>
+            <p>
+              <a
               href="https://github.com/tony96kimsh/tony96kimsh/blob/main/CV.md"
               target="_blank"
               rel="noopener noreferrer"
               className="d-inline-flex align-items-center text-decoration-none"
             >
-              📄 이력서
-            </a>
+              📄 이력서 보기
+              </a>
             </p>
             <blockquote className="blockquote fst-italic mt-4">
               “동료의 성장은 곧 나의 성장” <br />

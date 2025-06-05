@@ -28,7 +28,7 @@ export const projectList: ProjectList[] = [
   }
 ],
     github: "https://github.com/tony96kimsh/DailyArticle", 
-    markdown: './markdown/daily-article/README.md' ,
+    markdown: 'public/markdown/desktop/daily-article/README.md' ,
     deploy: 'https://github.com/tony96kimsh/DailyArticle/releases',
   },
 {
@@ -43,7 +43,7 @@ export const projectList: ProjectList[] = [
   }
 ],    
     github: "https://github.com/tony96kimsh/Auto-Foldering",
-    markdown: './markdown/auto-folder/README.md',
+    markdown: 'public/markdown/desktop/auto-folder/README.md',
     deploy: "https://github.com/tony96kimsh/Auto-Foldering/releases"
 
   },
@@ -59,7 +59,7 @@ export const projectList: ProjectList[] = [
   }
 ],
     github: "https://github.com/tony96kimsh/analysis-fertility",
-    markdown: 'public/markdown/analysis-fertility/README.md'  
+    markdown: 'public/markdown/desktop/analysis-fertility/README.md'  
   },
 {
     images: "./img/draw1.png",
@@ -77,7 +77,7 @@ export const projectList: ProjectList[] = [
   }
 ],
     github: "https://github.com/tony96kimsh/DrawAnyAnimal",
-    markdown: './markdown/DrawAnyAnimal/README.md',
+    markdown: './markdown/web/DrawAnyAnimal/README.md',
     url: "https://tony96kimsh.github.io/DrawAnyAnimal/"
   },
 {
@@ -96,7 +96,7 @@ export const projectList: ProjectList[] = [
   }
 ],
     github: "https://github.com/tony96kimsh/muffler",
-    markdown: './markdown/muffler/README.md',
+    markdown: './markdown/web/muffler/README.md',
     url: "https://muffler.onrender.com/"
   },
 {
@@ -123,7 +123,7 @@ export const projectList: ProjectList[] = [
   }
 ],
     github: "https://github.com/tony96kimsh/philpick",
-    markdown: './markdown/philpick/README.md',
+    markdown: './markdown/web/philpick/README.md',
     url: "https://philpick.vercel.app",
   },
 {
@@ -145,8 +145,8 @@ export const projectList: ProjectList[] = [
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   }
 ],
+    markdown: './markdown/web/piano/README.md',
     github: "https://github.com/tony96kimsh/piano",
-    markdown: './markdown/piano/README.md',
     url: "https://tony96kimsh.github.io/piano/"
 
   },
@@ -160,7 +160,8 @@ export const projectList: ProjectList[] = [
     "skillName": "App Inventer",
     "skillLogo": "public/img/app-inventer.png"
   }
-]
+],
+  markdown: "./markdown/design/quad-dictionary/README.md",
   },
 {
     images: "./img/image%206.png",
@@ -176,7 +177,10 @@ export const projectList: ProjectList[] = [
     "skillName": "CSS",
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   }
-]
+],
+  markdown: "public/markdown/design/meta-tony/README.md",
+  github: "https://github.com/tony96kimsh/tony96kimsh/tree/main/01_mtt/list/design-resume",
+  url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/portfolio.html",
   },
 {
     images: "./img/image%2010.png",
@@ -200,8 +204,10 @@ export const projectList: ProjectList[] = [
     "skillName": "CSS",
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   }
-
-]
+],
+  markdown: "public/markdown/web/yeong-dong/README.md",
+  github: "https://github.com/tony96kimsh/tony96kimsh/tree/main/01_mtt/list/yd",
+  url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/yd",
   },
 {
     images: "./img/image%2012.png",
@@ -225,7 +231,10 @@ export const projectList: ProjectList[] = [
     "skillName": "CSS",
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   }
-]
+],
+  markdown: "public/markdown/web/kb-Bank/README.md",
+  github: "https://github.com/tony96kimsh/tony96kimsh/tree/main/01_mtt/list/kb",
+  url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/kb",
   },
 {
     images: "./img/image%2015.png",
@@ -241,7 +250,10 @@ export const projectList: ProjectList[] = [
     "skillName": "CSS",
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   }
-]
+],
+  markdown: "./markdown/web/dea-sung/README.md",
+  github: "https://github.com/tony96kimsh/tony96kimsh/tree/main/01_mtt/list/ds",
+  url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/ds/index.html",
   },
 {
     images: "./img/image%2018.png",
@@ -257,7 +269,10 @@ export const projectList: ProjectList[] = [
     "skillName": "CSS",
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   }
-]
+],
+  markdown: "public/markdown/web/hi-jou/README.md",
+  github: "https://github.com/tony96kimsh/tony96kimsh/tree/main/01_mtt/list/hj",
+  url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/hj/",
   },
 {
     images: "./img/image%2021.png",
@@ -269,8 +284,12 @@ export const projectList: ProjectList[] = [
     "skillName": "Photoshop",
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg"
   }
-]
+],
+  markdown: "./markdown/design/hello-length/README.md",
+  url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/wd-1.html",
   },
+
+
 {
     images: "./img/image%2025.png",
     title: "(팀 프로젝트 / 디자인담당) 반려식물 관리 앱 “목요일”",
@@ -285,19 +304,25 @@ export const projectList: ProjectList[] = [
     "skillName": "Illustrator",
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
   }
-]
+],
+  markdown: "public/markdown/design/thursday/README.md",
+  url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/wd-2.html",
   },
+
+
 {
     images: "./img/image%2030.png",
     title: "가구 쇼핑몰 반응형 웹 디자인 “HI FURNITURE”",
     category: "design",
-    summary: "모바일/PC 가구 쇼핑몰  웹 사이트 디자인입니다.",
+    summary: "모바일/PC 가구 쇼핑몰 웹 사이트 디자인입니다.",
     skills: [
   {
     "skillName": "Photoshop",
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg"
   }
-]
+],
+  markdown: "public/markdown/design/hi-furniture/README.md",
+  url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/wd-4.html",
   },
 {
     images: "./img/hl-main.jpg",
@@ -313,6 +338,8 @@ export const projectList: ProjectList[] = [
     "skillName": "Illustrator",
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
   }
-]
+],
+  markdown: "./markdown/design/hi-ltp/README.md",
+  url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/wd-4.html",
   }
 ];
