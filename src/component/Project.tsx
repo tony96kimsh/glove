@@ -1,12 +1,9 @@
 import { useState } from "react";
-import { Container, Row, Col, Card, Modal, Button } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { projectList } from "../data/datas";
 import "../style/Project.css";
 
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import rehypeRaw from "rehype-raw";
-
+import ProjectDetailModal from "./ProjectDetailModal";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<typeof projectList[0] | null>(null);
@@ -23,7 +20,7 @@ const Projects = () => {
           setSelectedProject(project);
           setShowModal(true);
         });
-    } else if (project.github) {
+    } else {
       setSelectedProject(project);
       setMarkdownContent("");
       setShowModal(true);
@@ -42,6 +39,8 @@ const Projects = () => {
           backgroundColor: "#f1f3f5",
           fontSize: "0.95rem",
           fontWeight: 500,
+          marginRight: "0.5rem",
+          whiteSpace: "nowrap",
         }}
       >
         <img
@@ -63,10 +62,12 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-5" style={{ backgroundColor: "#fffaf3" }}>
-      
+    <section id="projects" style={{ backgroundColor: "#fffaf3", padding: "6rem 0" }}>
       <Container>
-        <h2 className="text-center mb-5" style={{ fontWeight: 800, fontSize: "2.5rem" }}>
+        <h2
+          className="text-center"
+          style={{ fontWeight: 900, fontSize: "3rem", marginBottom: "4rem" }}
+        >
           Projects
         </h2>
 
@@ -75,11 +76,19 @@ const Projects = () => {
           if (filtered.length === 0) return null;
 
           return (
-            <div key={category}>
-              <h3 className="mt-5 mb-4" style={{ fontWeight: 700, fontSize: "1.75rem", textTransform: "capitalize" }}>
+            <div key={category} className="mb-5">
+              <h3
+                style={{
+                  fontWeight: 800,
+                  fontSize: "2rem",
+                  textTransform: "capitalize",
+                  marginBottom: "2rem",
+                  marginTop: "4rem",
+                }}
+              >
                 {category}
               </h3>
-              <hr /> <br />
+              <hr className="mb-4" />
               <Row className="g-4">
                 {filtered.map((project, index) => (
                   <Col key={index} xs={12} sm={6} md={4}>
@@ -99,13 +108,13 @@ const Projects = () => {
                         style={{ objectFit: "cover", height: "180px" }}
                       />
                       <Card.Body>
-                        <Card.Title style={{ fontWeight: 700, fontSize: "1.1rem" }}>
+                        <Card.Title style={{ fontWeight: 700, fontSize: "1.2rem" }}>
                           {project.title}
                         </Card.Title>
                         <Card.Text style={{ fontSize: "0.95rem", lineHeight: 1.5 }}>
                           {project.summary}
                         </Card.Text>
-                        <div className="mt-3 d-flex flex-wrap gap-2">
+                        <div className="mt-3 d-flex flex-row flex-wrap justify-content-start align-items-center gap-2">
                           {project.skills.map((skill, i) => (
                             <SkillBadge key={i} skill={skill} />
                           ))}
@@ -119,103 +128,12 @@ const Projects = () => {
           );
         })}
 
-        <Modal show={showModal} onHide={() => setShowModal(false)} centered size="xl">
-          <Modal.Header closeButton>
-            <Modal.Title>프로젝트 상세보기</Modal.Title>
-          </Modal.Header>
-
-          <Modal.Body style={{ maxHeight: "70vh", overflowY: "auto", paddingBottom: "5rem" }}>
-          <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
-            rehypePlugins={[rehypeRaw]}
-            components={{
-              img: ({ node, ...props }) => (
-                <img
-                  {...props}
-                  style={{
-                    maxWidth: "100%",
-                    height: "auto",
-                    maxHeight: "60vh",
-                    display: "block",
-                    margin: "1rem auto",
-                    border: "1px solid #000",
-                    borderRadius: "8px",
-                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-                  }}
-                />
-              ),
-              table: ({ node, ...props }) => (
-                <table
-                  {...props}
-                  style={{
-                    width: "100%",
-                    borderCollapse: "separate",
-                    borderSpacing: "1.5rem 1rem", // 좌우 간격 확보 (col, row 모두)
-                  }}
-                />
-              ),
-              td: ({ node, ...props }) => (
-                <td
-                  {...props}
-                  style={{
-                    padding: "0.5rem",
-                    verticalAlign: "top",
-                  }}
-                />
-              ),
-            }}
-          >
-            {markdownContent}
-          </ReactMarkdown>
-          </Modal.Body>
-
-          <div
-            style={{
-              position: "sticky",
-              bottom: 0,
-              backgroundColor: "#fff",
-              padding: "1rem",
-              borderTop: "1px solid #dee2e6",
-              zIndex: 10,
-            }}
-          >
-            <div style={{ display: "flex", gap: "1rem" }}>
-              {selectedProject?.github && (
-                <Button
-                  variant="dark"
-                  href={selectedProject.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ flex: 1 }}
-                >
-                  깃허브에서 보기
-                </Button>
-              )}
-              {selectedProject?.deploy && (
-                <Button
-                  variant="secondary"
-                  href={selectedProject.deploy}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ flex: 1 }}
-                >
-                  배포 확인
-                </Button>
-              )}
-              {selectedProject?.url && (
-                <Button
-                  variant="secondary"
-                  href={selectedProject.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ flex: 1 }}
-                >
-                  사이트 방문
-                </Button>
-              )}
-            </div>
-          </div>
-        </Modal>
+        <ProjectDetailModal
+          show={showModal}
+          onHide={() => setShowModal(false)}
+          content={markdownContent}
+          project={selectedProject}
+        />
       </Container>
     </section>
   );

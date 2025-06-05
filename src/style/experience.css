@@ -1,0 +1,50 @@
+/* experience.css */
+
+.experience-section {
+  background-color: #fffaf3;
+  color: #5e473e;
+  padding: 6rem 1rem;
+  font-family: 'NanumSquareRound', sans-serif;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.subtitle-detail {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 2.5rem 0 1rem;
+  text-align: left;
+}
+
+.section-list {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+  text-align: left;
+}
+
+strong {
+  color: #222;
+  font-weight: 700;
+  background: linear-gradient(to top, #ffddb3 50%, transparent 50%);
+  padding: 0 4px;
+  border-radius: 4px;
+}
+

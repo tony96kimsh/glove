@@ -11,17 +11,22 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@mdx-js/react": "^3.1.0",
+    "@mdx-js/rollup": "^3.1.0",
     "bootstrap": "^5.3.6",
     "cookie-parser": "^1.4.7",
     "express-session": "^1.18.1",
+    "mermaid": "^11.6.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-bootstrap-icons": "^1.11.6",
     "react-dom": "^19.1.0",
     "react-fast-marquee": "^1.6.5",
     "react-markdown": "^10.1.0",
+    "rehype-pretty-code": "^0.14.1",
     "rehype-raw": "^7.0.0",
-    "remark-gfm": "^4.0.1"
+    "remark-gfm": "^4.0.1",
+    "remark-mermaidjs": "^7.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
