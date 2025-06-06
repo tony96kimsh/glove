@@ -19,7 +19,7 @@ export const projectList: ProjectList[] = [
   {
     images: "img/clipboard-1.png",
     title: "웹 클립보드",
-    summary: "복사/붙여넣기 작업이 잦은 QA 업무에서 착안한 메모 관리 웹 앱. 빠른 복사 기능과 폴더 분류 기능을 제공.",
+    summary: "복사/붙여넣기 작업이 잦은 QA 업무에서 착안하여 제작하게 된 메모 웹앱입니다.",
     skills: [
       { skillName: "TypeScript", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
       { skillName: "React", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
@@ -34,7 +34,7 @@ export const projectList: ProjectList[] = [
   {
     images: "img/glove-project.png",
     title: "Glove 포트폴리오",
-    summary: "QA 경험을 녹여 안정적이고 사용자 친화적으로 완성한 개발자 포트폴리오. 프로젝트와 스킬, 경험을 체계적으로 정리.",
+    summary: "백엔드, 프론트엔드, QA, 디자인까지 경험 후 제작한 풀스택 개발자 포트폴리오입니다.",
     skills: [
       { skillName: "React", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
       { skillName: "TypeScript", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },

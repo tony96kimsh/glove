@@ -67,11 +67,11 @@ const ProjectDetailModal = ({ show, onHide, content, project }: Props) => {
                 <img
                   {...props}
                   style={{
-                    maxWidth: "100%",
+                    maxWidth: "80%",
                     height: "auto",
                     maxHeight: isDiagram ? "none" : "60vh",
                     display: "block",
-                    margin: isDiagram ? "2rem auto" : "1rem 0",
+                    margin: isDiagram ? "2rem 0" : "1rem 0",
                     border: isDiagram ? "2px solid #444" : "1px solid #000",
                     borderRadius: isDiagram ? "12px" : "8px",
                     boxShadow: isDiagram
