@@ -26,7 +26,7 @@ const Header = () => {
           }}
         >
           <img
-            src="public/favicon.png"
+            src="/favicon.png"
             alt="글로브 로고"
             style={{
               width: "26px",

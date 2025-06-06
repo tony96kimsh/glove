@@ -1,7 +1,7 @@
 # 📰 Daily Article (영어 신문 리더 앱)
 > The Guardian API를 사용하여 영어 신문을 제공하는 심플한 데스크톱 어플리케이션입니다.
 
-![첫화면](public/markdown/desktop/daily-article/img/home.jpg) | ![리스트 화면](public/markdown/desktop/daily-article/img/list.jpg)
+![첫화면](/markdown/desktop/daily-article/img/home.jpg) | ![리스트 화면](/markdown/desktop/daily-article/img/list.jpg)
 --|--|
 
 <br>
@@ -30,7 +30,7 @@ WinForms를 활용한 데스크톱 앱 형태로 영어 뉴스 리더를 개발�
 - API: [The Guardian Open API](https://open-platform.theguardian.com/)
 
 ### 주요 기능
-![](public/markdown/desktop/daily-article/img/running.gif)
+![](/markdown/desktop/daily-article/img/running.gif)
 
 - 매일 가장 중요한 영어 뉴스를 자동으로 제공
 - 기사 제목, 본문, 발행일 표시

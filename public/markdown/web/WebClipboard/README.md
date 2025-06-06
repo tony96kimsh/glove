@@ -3,7 +3,7 @@
 
 홈화면 | 로그인 화면 | 메모 추가
 --|--|--
-![홈화면](./public/image2.png) | ![로그인](./public/image3.png) | ![메모추가](./public/image.png)
+![홈화면](./image2.png) | ![로그인](./image3.png) | ![메모추가](./image.png)
 
 <br>
 
