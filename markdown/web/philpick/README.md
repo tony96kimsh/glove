@@ -75,34 +75,7 @@
 
 ## 책 검색 플로우맵
 
-```mermaid
-flowchart TD
-  Start[User types keyword]
-  Submit[Form submitted]
-  CheckEmpty{Is keyword empty?}
-  Alert[Show alert message]
-  Loading[Show loading spinner]
-  FetchData[Call fetch to API]
-  ParseData[Parse JSON result]
-  CheckResult{Has items?}
-  ShowEmpty[Show no results message]
-  LoopItems[Loop over items]
-  Highlight[Highlight keyword]
-  Render[Render book list]
-  UpdatePage[Update page info]
-  ErrorCatch[Catch fetch error]
-  ShowError[Show error message]
-  End[Done]
-
-  Start --> Submit --> CheckEmpty
-  CheckEmpty -- Yes --> Alert --> End
-  CheckEmpty -- No --> Loading --> FetchData --> ParseData --> CheckResult
-
-  CheckResult -- No --> ShowEmpty --> End
-  CheckResult -- Yes --> LoopItems --> Highlight --> Render --> UpdatePage --> End
-
-  FetchData --> ErrorCatch --> ShowError --> End
-```
+![다이어그램](./diagram/philpick.svg)
 
 ## 스크립트 코드
 

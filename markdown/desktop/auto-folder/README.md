@@ -73,31 +73,7 @@ Auto_Foldering/
 
 ### 🧭 연간 날짜 구분으로 실행 시, 판별 로직 다이어그램
 
-```mermaid
-flowchart TD
-    A[User clicks Execute button] --> B{Is Year Option Checked?}
-    B -- No --> Z[Do nothing]
-    B -- Yes --> C[For each file in receivedFiles]
-    C --> D[Call GetDateTakenOrCreated]
-
-    subgraph GetDateTakenOrCreated
-        D --> E[Try to read EXIF DateTimeOriginal]
-        E -- Success --> R1[Return exifDate]
-        E -- Fail --> F[Try to read QuickTime TagCreated]
-        F -- Success --> R2[Return videoDate]
-        F -- Fail --> G[Try to read TagLib Year]
-        G -- Success --> R3[Return audioDate]
-        G -- Fail --> H[Fallback to File.GetCreationTime]
-        H --> R4[Return creationDate]
-    end
-
-    R1 --> I[Extract year from date]
-    R2 --> I
-    R3 --> I
-    R4 --> I
-
-    I --> J[Create folder if it doesn't exist]    
-```
+![다이어그램](./diagram/auto-foldering.svg)
 
 <br>
 

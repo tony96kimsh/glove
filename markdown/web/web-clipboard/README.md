@@ -3,7 +3,8 @@
 
 홈화면 | 로그인 화면 | 메모 추가
 --|--|--
-![홈화면](./image2.png) | ![로그인](./image3.png) | ![메모추가](./image.png)
+![홈화면](./img/clipboard-1.png) | ![메모작성](./img/clipboard-2.png) | ![로그인](./img/clipboard-3.png)
+
 
 <br>
 
@@ -79,25 +80,7 @@ QA 업무 중 이슈 보고서를 복사해 사용하는 일이 잦았고, 이�
 
 로그인 정보가 있으면 클라우드 DB에 저장하고 없을 경우 로컬 스토리지를 사용합니다.
 
-```mermaid
-flowchart TD
-  A[Component Mount or Add Memo] --> B{Is Logged In?}
-  B -->|Yes| C{Has Email?}
-  C -->|Yes| D{Action Type}
-  D -->|Initial Load| E[Fetch folders from Supabase by email]
-  E --> F{Data exists?}
-  F -->|Yes| G[Set folders from Supabase]
-  F -->|No| H[Set folders as sample data]
-
-  D -->|Add Memo| I[Insert new memo to Supabase with email]
-
-  C -->|No| J[Fallback to localStorage]
-  B -->|No| J
-
-  J --> K{Action Type}
-  K -->|Initial Load| L[Load folders from localStorage or use sample data]
-  K -->|Add Memo| M[Save memo to localStorage]
-```
+![다이어그램](./diagram/web-clipboard-1.svg)
 
 #### 메모 CRUD 코드
 
@@ -204,22 +187,4 @@ const deleteMemo = (id: string) => {
 
 #### 🔗 Table Relationship
 
-```mermaid
-erDiagram
-  folders ||--o{ memos : contains
-  folders {
-    UUID id PK
-    text name
-    timestampz created_at
-    text user_email
-  }
-  memos {
-    UUID id PK
-    UUID folderId FK
-    text title
-    text content
-    timestampz created_at
-    timestampz updated_at
-    text user_email
-  }
-```
+![다이어그램](./img/web-clipboard-2.png)
