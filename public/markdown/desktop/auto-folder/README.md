@@ -1,7 +1,7 @@
 # 🗂️ Auto Foldering (날짜별 윈도우 파일 정리 앱)
 > .NET 프레임워크의 UI 라이브러리 WinForms을 활용한 C# 프로젝트
 
- ![logic](/markdown/desktop/auto-folder/img/logic.jpg) |![form1](/markdown/desktop/auto-folder/img/image.jpg) | ![alt text](/markdown/desktop/auto-folder/img/image-1.jpg)
+ ![logic](./markdown/desktop/auto-folder/img/logic.jpg) |![form1](./markdown/desktop/auto-folder/img/image.jpg) | ![alt text](./markdown/desktop/auto-folder/img/image-1.jpg)
 --|--|--
 
 - **[⬇ 실행 파일 다운로드 링크](https://github.com/tony96kimsh/Auto-Foldering/raw/refs/heads/main/bin/Release.zip)** (압축 해제 후 `Auto-Foldering.exe` 파일 실행)
@@ -21,7 +21,7 @@
 
 ### ✨ 주요 기능
 
-![대표 동작 로직](/markdown/desktop/auto-folder/img/testing.gif)
+![대표 동작 로직](./markdown/desktop/auto-folder/img/testing.gif)
 
 1. OpenFileDialog를 통해 정리 대상 파일 선택
 2. FolderBrowserDialog를 통해 저장 경로 설정
@@ -116,7 +116,7 @@ flowchart TD
 ## 📚 Reference
 
 ### 📦 NuGet Package
-![alt text](/markdown/desktop/auto-folder/img/nuget-list.png)
+![alt text](./markdown/desktop/auto-folder/img/nuget-list.png)
 - [MetadataExtractor](https://github.com/drewnoakes/metadata-extractor-dotnet)  
   이미지 및 영상 파일의 메타데이터(EXIF, QuickTime 등)를 읽기 위한 라이브러리.  
   사진의 촬영일자, 영상의 생성일자 등을 추출할 수 있음.

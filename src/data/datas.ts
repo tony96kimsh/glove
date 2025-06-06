@@ -17,7 +17,7 @@ type ProjectList = {
 
 export const projectList: ProjectList[] = [
 {
-    images: ".//img/dailyArticle1.jpg",
+    images: "./img/dailyArticle1.jpg",
     title: "Daily Article (영어 뉴스 리더 데스크톱 앱)",
     category: "desktop",
     summary: "WinForms 기반 데스크톱 앱으로, The Guardian 뉴스 API를 활용하여 영어 기사 정보를 매일 자동으로 불러옵니다.",
@@ -28,8 +28,8 @@ export const projectList: ProjectList[] = [
   }
 ],
     github: "https://github.com/tony96kimsh/DailyArticle", 
-    markdown: '/markdown/desktop/daily-article/README.md' ,
-    deploy: 'https://github.com/tony96kimsh/DailyArticle/releases',
+    markdown: "./markdown/desktop/daily-article/README.md" ,
+    deploy: "https://github.com/tony96kimsh/DailyArticle/releases",
   },
 {
     images: "./img/auto-folder1.png",
@@ -43,7 +43,7 @@ export const projectList: ProjectList[] = [
   }
 ],    
     github: "https://github.com/tony96kimsh/Auto-Foldering",
-    markdown: '/markdown/desktop/auto-folder/README.md',
+    markdown: "./markdown/desktop/auto-folder/README.md",
     deploy: "https://github.com/tony96kimsh/Auto-Foldering/releases"
 
   },
@@ -59,7 +59,7 @@ export const projectList: ProjectList[] = [
   }
 ],
     github: "https://github.com/tony96kimsh/analysis-fertility",
-    markdown: '/markdown/desktop/analysis-fertility/README.md'  
+    markdown: "./markdown/desktop/analysis-fertility/README.md"  
   },
 {
     images: "./img/draw1.png",
@@ -77,7 +77,7 @@ export const projectList: ProjectList[] = [
   }
 ],
     github: "https://github.com/tony96kimsh/DrawAnyAnimal",
-    markdown: './markdown/web/DrawAnyAnimal/README.md',
+    markdown: "./markdown/web/DrawAnyAnimal/README.md",
     url: "https://tony96kimsh.github.io/DrawAnyAnimal/"
   },
 {
@@ -96,7 +96,7 @@ export const projectList: ProjectList[] = [
   }
 ],
     github: "https://github.com/tony96kimsh/muffler",
-    markdown: './markdown/web/muffler/README.md',
+    markdown: "./markdown/web/muffler/README.md",
     url: "https://muffler.onrender.com/"
   },
 {
@@ -123,7 +123,7 @@ export const projectList: ProjectList[] = [
   }
 ],
     github: "https://github.com/tony96kimsh/philpick",
-    markdown: './markdown/web/philpick/README.md',
+    markdown: "./markdown/web/philpick/README.md",
     url: "https://philpick.vercel.app",
   },
 {
@@ -145,7 +145,7 @@ export const projectList: ProjectList[] = [
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   }
 ],
-    markdown: './markdown/web/piano/README.md',
+    markdown: "./markdown/web/piano/README.md",
     github: "https://github.com/tony96kimsh/piano",
     url: "https://tony96kimsh.github.io/piano/"
 
@@ -178,7 +178,7 @@ export const projectList: ProjectList[] = [
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   }
 ],
-  markdown: "/markdown/design/meta-tony/README.md",
+  markdown: "./markdown/design/meta-tony/README.md",
   github: "https://github.com/tony96kimsh/tony96kimsh/tree/main/01_mtt/list/design-resume",
   url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/portfolio.html",
   },
@@ -205,7 +205,7 @@ export const projectList: ProjectList[] = [
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   }
 ],
-  markdown: "/markdown/web/yeong-dong/README.md",
+  markdown: "./markdown/web/yeong-dong/README.md",
   github: "https://github.com/tony96kimsh/tony96kimsh/tree/main/01_mtt/list/yd",
   url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/yd",
   },
@@ -232,7 +232,7 @@ export const projectList: ProjectList[] = [
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   }
 ],
-  markdown: "/markdown/web/kb-Bank/README.md",
+  markdown: "./markdown/web/kb-Bank/README.md",
   github: "https://github.com/tony96kimsh/tony96kimsh/tree/main/01_mtt/list/kb",
   url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/kb",
   },
@@ -270,7 +270,7 @@ export const projectList: ProjectList[] = [
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
   }
 ],
-  markdown: "/markdown/web/hi-jou/README.md",
+  markdown: "./markdown/web/hi-jou/README.md",
   github: "https://github.com/tony96kimsh/tony96kimsh/tree/main/01_mtt/list/hj",
   url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/hj/",
   },
@@ -305,7 +305,7 @@ export const projectList: ProjectList[] = [
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
   }
 ],
-  markdown: "/markdown/design/thursday/README.md",
+  markdown: "./markdown/design/thursday/README.md",
   url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/wd-2.html",
   },
 
@@ -321,7 +321,7 @@ export const projectList: ProjectList[] = [
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg"
   }
 ],
-  markdown: "/markdown/design/hi-furniture/README.md",
+  markdown: "./markdown/design/hi-furniture/README.md",
   url: "https://tony96kimsh.github.io/tony96kimsh/01_mtt/list/wd-4.html",
   },
 {

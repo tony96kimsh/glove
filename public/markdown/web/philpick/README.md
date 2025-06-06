@@ -1,6 +1,6 @@
 # 📚 책과 글자를 사랑하는 사람들을 위한 필픽(PhilPick)
 
-![](/markdown/web/philpick/img/md/1.jpg) | ![](/markdown/web/philpick/img/md/2.jpg)
+![](./markdown/web/philpick/img/md/1.jpg) | ![](./markdown/web/philpick/img/md/2.jpg)
 --|--|
 
 
