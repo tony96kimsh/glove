@@ -1,6 +1,6 @@
 # ✍️ 개인 프로젝트 – 성훈의 방명록
 
-<img src="public/markdown/web/muffler/image.png" alt="방명록샘플" width="300">
+![성훈의 방명록](./markdown/web/muffler/image.png)
 
 ## 🛠 기술 스택
 

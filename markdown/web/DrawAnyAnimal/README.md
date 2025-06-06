@@ -1,7 +1,7 @@
 # 🎨 DrawAnyAnimal - 내가 그린 그림
 > HTML5 API(canvas, audio) 기능 제어하기
 
-![강아지 구현 사진](./img/image-2.png) | ![강아지 구현 사진](/markdown/web/DrawAnyAnimal/img/image.png)
+![강아지 구현 사진](./img/image-2.png) | ![강아지 구현 사진](./markdown/web/DrawAnyAnimal/img/image.png)
 --|--|
 
 링크
