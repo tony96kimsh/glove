@@ -2,8 +2,10 @@
 import { Modal, Button } from "react-bootstrap";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-
-// MermaidRenderer 삭제됨
+import "../style/Project.css";
+import rehypeHighlight from "rehype-highlight";
+import 'highlight.js/styles/github.css';
+import 'highlight.js/styles/atom-one-dark.css';
 
 
 type Props = {
@@ -27,6 +29,7 @@ const ProjectDetailModal = ({ show, onHide, content, project }: Props) => {
       </Modal.Header>
 
       <Modal.Body
+        className="react-markdown"
         style={{
           maxHeight: "70vh",
           overflowY: "auto",
@@ -35,6 +38,11 @@ const ProjectDetailModal = ({ show, onHide, content, project }: Props) => {
       >
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
+          rehypePlugins={[
+            [rehypeHighlight, {
+              theme: 'atom-one-dark', keepBackground: true 
+            }]
+          ]}
           components={{
             p: ({ node, ...props }) => (
               <p
@@ -93,6 +101,37 @@ const ProjectDetailModal = ({ show, onHide, content, project }: Props) => {
                 className="markdown-table"
               />
             ),
+            pre: ({ node, ...props }) => (
+              <pre
+                style={{
+                  backgroundColor: "#f5f5f5",
+                  padding: "1rem",
+                  borderRadius: "8px",
+                  overflowX: "auto",
+                  fontSize: "0.95rem",
+                  margin: "1.5rem 0",
+                  border: "1px solid #ddd",
+                }}
+                {...props}
+              />
+            ),
+            code: ({ node, inline, className, ...props }) => {
+              return inline ? (
+                <code
+                  style={{
+                    backgroundColor: "#f5f5f5", // 회색 배경
+                    color: "#d73a49",           // GitHub 스타일의 빨간색 (#d73a49)
+                    padding: "0.2em 0.4em",
+                    borderRadius: "4px",
+                    fontSize: "0.95em",
+                    fontFamily: "monospace",
+                  }}
+                  {...props}
+                />
+              ) : (
+                <code className={className} {...props} />
+              );
+            },  
           }}
         >
           {content}
