@@ -1,6 +1,6 @@
 ## **한국잉! 영어 사전** (App Inventor를 통한 개발)
 
-[홈화면](./img/image%205.png)
+![홈화면](./img/image%205.png)
 
 링크
 
