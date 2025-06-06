@@ -16,6 +16,36 @@ type ProjectList = {
 };
 
 export const projectList: ProjectList[] = [
+  {
+    images: "img/clipboard-1.png",
+    title: "웹 클립보드",
+    summary: "복사/붙여넣기 작업이 잦은 QA 업무에서 착안한 메모 관리 웹 앱. 빠른 복사 기능과 폴더 분류 기능을 제공.",
+    skills: [
+      { skillName: "TypeScript", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+      { skillName: "React", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { skillName: "Google OAuth", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" },
+      { skillName: "Supabase", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" },
+    ],
+    github: "https://github.com/tony96kimsh/WebClipboard",
+    markdown: "./markdown/web/web-clipboard/README.md",
+    deploy: "https://tony96kimsh.github.io/WebClipboard/",
+    category: "web",
+  },
+  {
+    images: "img/glove-project.png",
+    title: "Glove 포트폴리오",
+    summary: "QA 경험을 녹여 안정적이고 사용자 친화적으로 완성한 개발자 포트폴리오. 프로젝트와 스킬, 경험을 체계적으로 정리.",
+    skills: [
+      { skillName: "React", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { skillName: "TypeScript", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+      { skillName: "TailwindCSS", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
+      { skillName: "React-Bootstrap", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+    ],
+    github: "https://github.com/tony96kimsh/glove",
+    markdown: "./markdown/web/glove-portfolio/README.md",
+    deploy: "https://tony96kimsh.github.io/glove",
+    category: "web",
+  },
 {
     images: "./img/dailyArticle1.jpg",
     title: "Daily Article (영어 뉴스 리더 데스크톱 앱)",
@@ -92,7 +122,7 @@ export const projectList: ProjectList[] = [
   },
   {
     "skillName": "EJS",
-    "skillLogo": "/img/ejs.png"
+    "skillLogo": "./img/ejs.png"
   }
 ],
     github: "https://github.com/tony96kimsh/muffler",
@@ -127,7 +157,7 @@ export const projectList: ProjectList[] = [
     url: "https://philpick.vercel.app",
   },
 {
-    images: "./img/Screenshot_2025-03-10_at_8.17.31_PM.png",
+    images: "./img/piano.png",
     title: "Effy Sound (브라우저로 간편하게 어디서나 피아노 연주)",
     category: "web",
     summary: "키보드와 마우스로 피아노 연주가 가능한 사이트입니다.",
@@ -158,7 +188,7 @@ export const projectList: ProjectList[] = [
     skills: [
   {
     "skillName": "App Inventer",
-    "skillLogo": "/img/app-inventer.png"
+    "skillLogo": "./img/app-inventer.png"
   }
 ],
   markdown: "./markdown/design/quad-dictionary/README.md",

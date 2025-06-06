@@ -60,18 +60,23 @@ const ProjectDetailModal = ({ show, onHide, content, project }: Props) => {
                   />
                 );
               }
+
+              const isDiagram = props.src?.includes("diagram");
+
               return (
                 <img
                   {...props}
                   style={{
                     maxWidth: "100%",
                     height: "auto",
-                    maxHeight: "60vh",
+                    maxHeight: isDiagram ? "none" : "60vh",
                     display: "block",
-                    margin: "1rem 0",
-                    border: "1px solid #000",
-                    borderRadius: "8px",
-                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+                    margin: isDiagram ? "2rem auto" : "1rem 0",
+                    border: isDiagram ? "2px solid #444" : "1px solid #000",
+                    borderRadius: isDiagram ? "12px" : "8px",
+                    boxShadow: isDiagram
+                      ? "0 6px 20px rgba(0, 0, 0, 0.2)"
+                      : "0 4px 12px rgba(0, 0, 0, 0.1)",
                   }}
                 />
               );

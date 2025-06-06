@@ -1,5 +1,6 @@
 # Simple piano & Pitch monitor
-![Screenshot 2025-03-10 at 8 17 31 PM](https://github.com/user-attachments/assets/a0df9af0-6a55-4861-9a79-3a20204fbcb9)
+
+![Screenshot 2025-03-10 at 8 17 31 PM](./img/piano.png)
 
 
 - [사이트 링크](https://piano-iota-murex.vercel.app/)
