@@ -28,7 +28,7 @@ export const projectList: ProjectList[] = [
     ],
     github: "https://github.com/tony96kimsh/WebClipboard",
     markdown: "./markdown/web/web-clipboard/README.md",
-    deploy: "https://tony96kimsh.github.io/WebClipboard/",
+    url: "https://tony96kimsh.github.io/WebClipboard/",
     category: "web",
   },
   {
@@ -43,7 +43,7 @@ export const projectList: ProjectList[] = [
     ],
     github: "https://github.com/tony96kimsh/glove",
     markdown: "./markdown/web/glove-portfolio/README.md",
-    deploy: "https://tony96kimsh.github.io/glove",
+    url: "https://tony96kimsh.github.io/glove",
     category: "web",
   },
 {
