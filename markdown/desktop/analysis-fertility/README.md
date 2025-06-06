@@ -23,7 +23,7 @@ Python
 - 전국 평균 출산율은 점차 하락세를 보임
 - 특히 일부 지역은 1.0 이하로 진입하며 급감 추세가 뚜렷함
 
-![출산율 추이](./markdown/analysis-fertility/img/local_fertility.png) | ![한국 출산율과 에너지 소비](./markdown/analysis-fertility/img/kor-ftt-energy.png)
+![출산율 추이](public/markdown/desktop/analysis-fertility/img/local_fertility.png) | ![한국 출산율과 에너지 소비](public/markdown/desktop/analysis-fertility/img/kor-ftt-energy.png)
 --|--|
 
 ### 지역별 에너지 소비의 추이
@@ -31,7 +31,7 @@ Python
 - 도시화가 높은 지역일수록 소비량 증가가 뚜렷함
 
 
-![전기 소비 추이](./markdown/analysis-fertility/img/local_elec.png) 
+![전기 소비 추이](public/markdown/desktop/analysis-fertility/img/local_elec.png) 
 
 ### 출산율과 에너지 소비는 유의미한 상관관계가 있을까?
 
@@ -44,7 +44,7 @@ Python
 - 일부 지역(예: 경기, 대구)에서는 비교적 뚜렷한 음의 상관계수 확인되었습니다.
 - 이는 에너지 소비 증가와 출산율 감소 간의 구조적 관련 가능성을 시사하는 것으로 보입니다.
 
-![relative graph](./markdown/analysis-fertility/img/local_rel.png)
+![relative graph](public/markdown/desktop/analysis-fertility/img/local_rel.png)
 
 ```py
 '''지역별 출산율과 전기 소비 상관계수 (2011~2020) 코드 일부'''
