@@ -20,10 +20,8 @@ Links
 - `Glove`라는 이름은 그런 바람에서 비롯되었고, 개발자로서의 정체성과 태도를 표현합니다.
 
 ### 🛠 기술 스택  
-**Frontend**: React, TypeScript, TailwindCSS, React-Bootstrap  
-**Backend**: Node.js (계획 중)  
+**Frontend**: React, TypeScript, React-Bootstrap  
 **Build/Deploy**: Vite, GitHub Pages  
-**Tools**: Git, VSCode, Notion
 
 ### ✨ 주요 기능  
 1. 포트폴리오 프로젝트 모달 보기 (React + Markdown 렌더링)  
@@ -56,7 +54,7 @@ src/
 │   ├── Project.tsx
 ├── data/
 │   └── datas.ts          # 프로젝트/기술스택 데이터
-├── style/                # CSS 파일 (Tailwind/Bootstrap 혼용)
+├── style/                # CSS 파일
 │   └── Project.css
 ├── App.tsx
 └── main.tsx
