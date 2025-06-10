@@ -13,25 +13,47 @@ const Experience = () => {
           </Col>
         </Row>
 
-        {/* QA 업무 */}
-        <Row className="justify-content-center mb-5">
-          <Col xs={12} md={10}>
-            <h4 className="section-subtitle">
-              QA 업무 <span className="subtitle-detail">(2023.05 ~ 2025.01 / 1년 8개월)</span>
-            </h4>
-            <Row className="g-3 mt-3">
-              {["35", "36", "37"].map((num) => (
-                <Col xs={12} md={4} key={num}>
-                  <img
-                    src={`img/image ${num}.png`}
-                    alt={`QA${num}`}
-                    className="img-fluid rounded shadow-sm"
-                  />
-                </Col>
-              ))}
-            </Row>
-          </Col>
-        </Row>
+{/* QA 업무 */}
+<Row className="justify-content-center mb-5 text-center">
+  <Col xs={12} md={10}>
+    <h4 style={{ fontWeight: 700, marginBottom: "1rem" }}>
+      QA 업무 <span style={{ fontSize: "1rem", fontWeight: 500 }}>(2023.05 ~ 2025.01 / 1년 8개월)</span>
+    </h4>
+
+    <Row className="g-3 mt-3">
+      <Col xs={12} md={4}>
+        <img
+          src="img/image 35.png"
+          alt="QA1"
+          className="img-fluid rounded shadow-sm"
+        />
+      </Col>
+      <Col xs={12} md={4}>
+        <img
+          src="img/image 36.png"
+          alt="QA2"
+          className="img-fluid rounded shadow-sm"
+        />
+      </Col>
+      <Col xs={12} md={4}>
+        <img
+          src="img/image 37.png"
+          alt="QA3"
+          className="img-fluid rounded shadow-sm"
+        />
+      </Col>
+    </Row>
+
+    <div className="mt-4 text-start" style={{ fontSize: "1rem", lineHeight: 1.8 }}>
+      <p style={{ fontWeight: 600, marginBottom: "0.5rem" }}>주요 업무 및 경험</p>
+      <ul style={{ paddingLeft: "1rem" }}>
+        <li><strong>JIRA</strong>를 통한 이슈 등록, 우선순위 조정, 리포트 작성 등 QA 프로세스 전반 관리하였습니다.</li>
+        <li>카카오모빌리티의 <strong>트럭커 앱</strong>과 Electron 기반 웹앱 <strong>카카오T물류</strong>, <strong>로지노트</strong> 기능 및 UI 테스트를 진행하였습니다.</li>
+        <li><strong>Swagger, JIRA, Figma, Slack</strong> 등 협업 도구에 익숙합니다.</li>
+      </ul>
+    </div>
+  </Col>
+</Row>
 
         {/* RFID 재고 시스템 */}
         <Row className="justify-content-center mb-5">

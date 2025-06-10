@@ -40,13 +40,16 @@ const Header = () => {
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto align-items-center">
             <Nav.Link href="#about" style={navLinkStyle}>
-              About
+              소개글
             </Nav.Link>
             <Nav.Link href="#projects" style={navLinkStyle}>
-              Projects
+              프로젝트
+            </Nav.Link>
+            <Nav.Link href="#experience" style={navLinkStyle}>
+              근무경험
             </Nav.Link>
             <Nav.Link href="#contact" style={navLinkStyle}>
-              Contact
+              연락처
             </Nav.Link>
             <Nav.Link
               href="https://github.com/tony96kimsh"

@@ -4,7 +4,7 @@ import { Github } from "react-bootstrap-icons";
 const Contact = () => {
   return (
     <Container className="my-5">
-      <h2 className="mb-4">📬 Contact</h2>
+      <h2 className="mb-4" id="contact">📬 Contact</h2>
       <Card className="p-4 shadow-sm border-0">
         <Row className="align-items-center">
           <Col xs={12} md={4} className="text-center mb-4 mb-md-0">
