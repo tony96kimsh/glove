@@ -2,11 +2,11 @@
 import { Modal, Button } from "react-bootstrap";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import "../style/Project.css";
+import rehypeRaw from "rehype-raw";
 import rehypeHighlight from "rehype-highlight";
-import 'highlight.js/styles/github.css';
-import 'highlight.js/styles/atom-one-dark.css';
-
+import "../style/Project.css";
+import "highlight.js/styles/github.css";
+import "highlight.js/styles/atom-one-dark.css";
 
 type Props = {
   show: boolean;
@@ -21,7 +21,7 @@ type Props = {
 
 const ProjectDetailModal = ({ show, onHide, content, project }: Props) => {
   return (
-    <Modal show={show} onHide={onHide} centered size="xl">
+    <Modal show={show} onHide={onHide} centered size="xl" keyboard={true}>
       <Modal.Header closeButton>
         <Modal.Title style={{ fontSize: "1.8rem", fontWeight: 700 }}>
           📌 프로젝트 상세보기
@@ -39,9 +39,14 @@ const ProjectDetailModal = ({ show, onHide, content, project }: Props) => {
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           rehypePlugins={[
-            [rehypeHighlight, {
-              theme: 'atom-one-dark', keepBackground: true 
-            }]
+            rehypeRaw,
+            [
+              rehypeHighlight,
+              {
+                theme: "atom-one-dark",
+                keepBackground: true,
+              },
+            ],
           ]}
           components={{
             p: ({ node, ...props }) => (
@@ -119,8 +124,8 @@ const ProjectDetailModal = ({ show, onHide, content, project }: Props) => {
               return inline ? (
                 <code
                   style={{
-                    backgroundColor: "#f5f5f5", // 회색 배경
-                    color: "#d73a49",           // GitHub 스타일의 빨간색 (#d73a49)
+                    backgroundColor: "#f5f5f5",
+                    color: "#d73a49",
                     padding: "0.2em 0.4em",
                     borderRadius: "4px",
                     fontSize: "0.95em",
@@ -131,7 +136,7 @@ const ProjectDetailModal = ({ show, onHide, content, project }: Props) => {
               ) : (
                 <code className={className} {...props} />
               );
-            },  
+            },
           }}
         >
           {content}
