@@ -48,7 +48,7 @@ const Experience = () => {
               <p style={{ fontWeight: 600, marginBottom: "0.5rem" }}>주요 업무 및 경험</p>
               <ul style={{ paddingLeft: "1rem" }}>
                 <li><strong>JIRA</strong>를 통한 이슈 등록, 우선순위 조정, 리포트 작성 등 QA 프로세스 전반 관리하였습니다.</li>
-                <li>카카오모빌리티의 <strong>트럭커 앱</strong>과 Electron 기반 웹앱 <strong>카카오T물류</strong>, <strong>로지노트</strong> 기능 및 UI 테스트를 진행하였습니다.</li>
+                <li>카카오모빌리티의 <strong>트럭커 앱</strong>과 Electron 기반 앱 <strong>카카오T물류</strong>, <strong>로지노트</strong> 기능 및 UI 테스트를 진행하였습니다.</li>
                 <li><strong>Swagger, JIRA, Figma, Slack</strong> 등 협업 도구에 익숙합니다.</li>
               </ul>
             </div>
