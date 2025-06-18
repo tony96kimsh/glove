@@ -9,7 +9,7 @@ const Experience = () => {
         {/* 제목 */}
         <Row className="justify-content-center text-center mb-5">
           <Col xs={12} md={10}>
-            <h2 className="experience-title">Experience</h2>
+            <h2 className="experience-title">근무 경험</h2>
           </Col>
         </Row>
 

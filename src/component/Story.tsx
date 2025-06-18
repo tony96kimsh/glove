@@ -12,7 +12,7 @@ const Story = () => {
     >
       <Container>
         <h2 className="text-center mb-4" style={{ fontWeight: 800, fontSize: "2.2rem" }}>
-          Glove Project
+          이름 소개 'Glove Project'
         </h2>
         <Row className="justify-content-center text-center">
           <Col md={8}>

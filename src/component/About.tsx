@@ -36,7 +36,7 @@ const About = () => {
         <Row className="justify-content-center text-center mb-5">
           <Col xs={12} md={10} lg={8}>
             <h2 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", fontWeight: 800, marginBottom: "1.5rem" }}>
-              About Me
+              소개글
             </h2>
             <p style={{ fontSize: "clamp(1rem, 2.5vw, 1.2rem)", lineHeight: 1.8 }}>
               <strong>디자인부터 QA, 프론트엔드, 백엔드까지 경험한</strong><br />

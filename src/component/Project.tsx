@@ -68,10 +68,10 @@ const Projects = () => {
           className="text-center"
           style={{ fontWeight: 900, fontSize: "3rem", marginBottom: "4rem" }}
         >
-          Projects
+          프로젝트
         </h2>
 
-        {["desktop", "web", "design"].map((category) => {
+        {["C# / Python", "web", "design"].map((category) => {
           const filtered = projectList.filter((p) => p.category === category);
           if (filtered.length === 0) return null;
 

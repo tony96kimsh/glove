@@ -49,7 +49,7 @@ export const projectList: ProjectList[] = [
 {
     images: "./img/dailyArticle1.jpg",
     title: "Daily Article (영어 뉴스 리더 데스크톱 앱)",
-    category: "desktop",
+    category: "C# / Python",
     summary: "WinForms 기반 데스크톱 앱으로, The Guardian 뉴스 API를 활용하여 영어 기사 정보를 매일 자동으로 불러옵니다.",
     skills: [
   {
@@ -64,23 +64,45 @@ export const projectList: ProjectList[] = [
 {
     images: "./img/auto-folder1.png",
     title: "Auto-Foldering (윈도우 파일 자동 폴더 정리 앱)",
-    category: "desktop",
+    category: "C# / Python",
     summary: "UI라이브러리 윈폼을 활용하여 윈도우 파일을 생성일에 따라 폴더에 자동 정리해주는 기능의 데스크톱 어플리케이션입니다.",
     skills: [
   {
     "skillName": "C#",
     "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
   }
-],    
+    ],    
     github: "https://github.com/tony96kimsh/Auto-Foldering",
     markdown: "./markdown/desktop/auto-folder/README.md",
     deploy: "https://github.com/tony96kimsh/Auto-Foldering/releases"
 
   },
 {
+  category: "C# / Python",
+  title: "BookListMVC (ASP.NET MVC 모델의 간단한 도서 리스트)",
+  summary: "MySQL 기반 ASP.NET MVC 를 통해 도서 리스트를 제공하며, view를 통한 MySQL 데이터베이스 추가가 가능합니다.",
+  images: "img/booklist.jpg",
+  markdown: "./markdown/desktop/book-list-asp/README.md",
+  skills: [    
+      {
+        "skillName": "C#",
+        "skillLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+      },
+      {
+        skillName: "ASP.NET",
+        skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
+      },
+      {
+        skillName: "MySQL",
+        skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+      }
+  ],
+  github: "https://github.com/tony96kimsh/BookListMVC"
+},
+{
     images: "./img/fertility1.png",
     title: "파이썬을 통한 데이터 분석 (에너지 소비와 출산율 관계성 조사)",
-    category: "desktop",
+    category: "C# / Python",
     summary: "연간 출산율과 에너지 소비량의 상관 관계를 파이썬으로 분석하였습니다.",
     skills: [
   {
@@ -90,7 +112,8 @@ export const projectList: ProjectList[] = [
 ],
     github: "https://github.com/tony96kimsh/analysis-fertility",
     markdown: "./markdown/desktop/analysis-fertility/README.md"  
-  },
+},
+
 {
     images: "./img/draw1.png",
     title: "내가 그린 그림 (그림판 웹앱)",
