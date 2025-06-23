@@ -1,4 +1,4 @@
-# 🎨 BookListMVC
+# 📚 BookListMVC
 > MySQL 기반의 ASP.NET MVC 북스토어 프로젝트
 
 ![도서 리스트 화면](./img/booklist.jpg)
