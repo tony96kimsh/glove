@@ -39,7 +39,7 @@ const About = () => {
               소개글
             </h2>
             <p style={{ fontSize: "clamp(1rem, 2.5vw, 1.2rem)", lineHeight: 1.8 }}>
-              <strong>디자인부터 QA, 프론트엔드, 백엔드까지 경험한</strong><br />
+              <strong>백엔드부터 프론트엔드, QA, 디자인까지 경험한</strong><br />
               풀스택 주니어 개발자 <strong>김성훈</strong>입니다.
               <br /><br />
               <strong>자라홈에서 RFID 시스템을 도입하며 IT에 눈을 뜨고,</strong><br />
