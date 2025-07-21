@@ -17,6 +17,22 @@ type ProjectList = {
 
 export const projectList: ProjectList[] = [
   {
+    images: "img/view_log.jpg",
+    title: "사람숲 HR ERP",
+    summary: "풀스택으로 진행한 팀 프로젝트로써 인사 관리 웹앱입니다.",
+    skills: [
+      { skillName: "ASP.NET", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" },
+      { skillName: "C#", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" },
+      { skillName: "TypeScript", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+      { skillName: "React", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { skillName: "Entity Framework", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain.svg" },
+      { skillName: "PostgreSQL", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" }
+    ],
+    github: "https://github.com/tony96kimsh/saramsoop_Tony",
+    markdown: "./markdown/web/saransoop/README.md",
+    category: "web"
+  },
+  {
     images: "img/clipboard-1.png",
     title: "웹 클립보드",
     summary: "복사/붙여넣기 작업이 잦은 QA 업무에서 착안하여 제작하게 된 메모 웹앱입니다.",
