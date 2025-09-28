@@ -25,7 +25,7 @@ const Contact = () => {
       <Card className="p-4 shadow-sm border-0">
         <Row className="align-items-center">
           <Col xs={12} md={4} className="text-center mb-4 mb-md-0">
-            <Image src="img/SungHoonKim.jpg" roundedCircle width={150} alt="김성훈" />
+            <Image src="/glove/img/SungHoonKim.jpg" roundedCircle width={150} alt="김성훈" />
           </Col>
           <Col xs={12} md={8}>
             <h5 className="fw-bold mb-2">👤 김성훈 (96.03.26)</h5>
