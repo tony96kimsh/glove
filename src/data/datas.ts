@@ -17,6 +17,20 @@ type ProjectList = {
 
 export const projectList: ProjectList[] = [
   {
+    images: "img/minutesAI.jpg",
+    title: "MinutesAI (AI 음성-텍스트 변환 서비스)",
+    summary: "OpenAI Whisper를 활용한 AI 기반 음성 인식 및 텍스트 변환 웹 애플리케이션입니다.",
+    skills: [
+      { skillName: "Python", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { skillName: "PyTorch", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+      { skillName: "OpenAI Whisper", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg" },
+      { skillName: "Docker", skillLogo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" }
+    ],
+    github: "https://github.com/tony96kimsh/minutesAI",
+    markdown: "./markdown/web/minutesAI/README.md",    
+    category: "C# / Python"
+  },
+  {
     images: "img/view_log.jpg",
     title: "사람숲 HR ERP",
     summary: "풀스택으로 진행한 팀 프로젝트로써 인사 관리 웹앱입니다.",
