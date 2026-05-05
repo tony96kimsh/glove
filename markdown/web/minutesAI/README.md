@@ -100,7 +100,7 @@ minutesAI/
 - [OpenAI Whisper 공식 문서](https://github.com/openai/whisper)
 - [Gradio 공식 문서](https://www.gradio.app/)
 - [Hugging Face Spaces](https://huggingface.co/spaces)
-- [KOSA 멘토링 프로그램](https://www.kosa.or.kr/)
+- [KOSA 멘토링 프로그램](https://miraeplus.sw.or.kr/ko/mentoring)
 
 ---
 
